@@ -22,9 +22,11 @@ gsap.to(".b", {
 
 gsap.to(".c", {
   scrollTrigger: {
-    start: "top center",
+    start: "top center", //"20px 80%""
     trigger: ".c",
     toggleActions: "play none none reverse",
+    scrub: 2,
+    markers: true,
   },
   x: 400,
   rotation: 360,
